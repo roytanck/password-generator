@@ -1,0 +1,52 @@
+body {
+    padding: 3rem;
+    margin: 0;
+    background-color: #dde;
+    color: #444;
+    font-family: sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+input#password {
+    display: inline;
+    width: 100%;
+    height: 3rem;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 2rem;
+    text-align: center;
+    color: #444;
+    border: none;
+    box-shadow: inset 0px 0px 1px #000;
+}
+
+input#password:focus-visible {
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    input#password {
+        height: 2rem;
+        font-size: 1.33rem;
+    }
+}
