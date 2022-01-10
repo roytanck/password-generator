@@ -42,7 +42,7 @@ input#password:focus-visible {
 
 @media screen and (max-width: 600px) {
     body {
-        padding: 1rem;
+        padding: 3rem 1rem;
     }
 
     input#password {

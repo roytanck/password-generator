@@ -1,4 +1,5 @@
 const init = () => {
+    const targetLength = 20;
     let field = document.getElementById( 'password' );
     // character ranges
     const chars = [
@@ -16,7 +17,7 @@ const init = () => {
     // concatentate the chars into one string to pick the rest of the characters from
     let allChars = chars.join('');
     // add 16 more characters to get a nice, long password
-    for( let i=0; i<16; i++ ){
+    for( let i=passwordChars.length; i<targetLength; i++ ){
         passwordChars.push( allChars[ Math.floor( Math.random() * allChars.length ) ] );
     }
     // randomize the array so the first four are not always from range 1-4
