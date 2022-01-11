@@ -16,7 +16,7 @@ const init = () => {
     }
     // concatentate the chars into one string to pick the rest of the characters from
     let allChars = chars.join('');
-    // add 16 more characters to get a nice, long password
+    // add characters until the target length is reached
     for( let i=passwordChars.length; i<targetLength; i++ ){
         passwordChars.push( allChars[ Math.floor( Math.random() * allChars.length ) ] );
     }
@@ -24,7 +24,7 @@ const init = () => {
     passwordChars.sort( ( a, b ) => {
         return ( Math.random() < 0.5 ) ? -1 : 1;
     } );
-    // create the password string, fill the field and select is for copying
+    // create the password string, fill the field and select it for copying
     field.value = passwordChars.join('');
     field.select();
 }
