@@ -1,6 +1,11 @@
+html {
+    height: 100%;
+}
+
 body {
-    padding: 3rem;
+    padding: 0 1rem;
     margin: 0;
+    height: 100%;
     background-color: #dde;
     color: #444;
     font-family: sans-serif;
@@ -19,6 +24,20 @@ a:hover {
     margin: 0 auto;
     text-align: center;
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content {
+    height: calc( 100% - 3rem );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#credits {
+    height: 3rem;
 }
 
 input#password {
@@ -41,10 +60,6 @@ input#password:focus-visible {
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        padding: 3rem 1rem;
-    }
-
     input#password {
         height: 2rem;
         font-size: 1.33rem;
