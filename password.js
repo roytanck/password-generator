@@ -27,6 +27,11 @@ const init = () => {
     // create the password string, fill the field and select it for copying
     field.value = passwordChars.join('');
     field.select();
+    // re-select the contents when the field receives focus
+    field.addEventListener( 'focus', (e) => {
+        return e.target.select();
+    }, false );
+
 }
 
 document.addEventListener( 'DOMContentLoaded', init, false );
